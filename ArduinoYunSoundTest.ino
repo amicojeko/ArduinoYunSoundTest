@@ -17,7 +17,7 @@ void loop(){
   buttonState = digitalRead(buttonPin);
   if (buttonState == HIGH) {     
     digitalWrite(ledPin, HIGH);  
-    p.runShellCommand("madplay /root/sounds/ItCouldWork.mp3");
+    p.runShellCommand("madplay /root/ItCouldWork.mp3");
     while(p.running());  
     Serial.println("it works!");
   } 
